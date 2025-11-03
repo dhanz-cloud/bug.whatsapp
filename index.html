@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>BUG WA BY DHANZ</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+<style type="text/css">
+    body {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: ;
+        margin: 0;
+        color: #fff;
+    }
+    .login-container {
+        text-align: center;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #2a2a2a;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .login-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 16px;
+    }
+    .login-input {
+        width: 100%;
+        padding: 10px 0px;
+        margin: 10px 0;
+        border: 1px solid #444;
+        border-radius: 4px;
+        background-color: #3a3a3a;
+        color: #fff;
+    }
+    .login-input::placeholder {
+        color: #bbb;
+    }
+    .login-button {
+        width: 100%;
+        padding: 0px;
+        background-color: #00d9ff;
+        color: black;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .login-button:hover {
+        background-color: rgb(111, 75, 164);
+    }
+    .scare {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+    }
+    video#video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
+<body>
+  
+
+<div class="login-container">
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks Berjalan Warna-Warni</title>
+    <style>
+        /* CSS untuk efek warna pelangi/gradien pada teks */
+        .rainbow-text {
+            /* Membuat teks transparan agar gradien latar belakang bisa terlihat */
+            color: transparent;
+            /* Menggunakan gradien latar belakang */
+            background-image: linear-gradient(
+                to right,
+                red, /* Merah */
+                orange, /* Oranye */
+                yellow, /* Kuning */
+                green, /* Hijau */
+                blue, /* Biru */
+                indigo, /* Nila */
+                violet /* Ungu */
+            );
+            /* Memotong gradien latar belakang agar hanya mengisi bentuk teks */
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* Mengatur ketebalan font */
+            font-weight: bold;
+            /* Mengatur ukuran font (opsional) */
+            font-size: 24px;
+        }
+
+        /* Gaya tambahan untuk marquee agar lebih terlihat jelas */
+        .marquee-container {
+            border: 2px solid #ccc; /* Batas opsional */
+            padding: 10px;
+            width: 90%;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teks Berjalan dengan Pengatur Warna Standar HTML</title>
+<style>
+/* 🎨 CSS untuk mengatur tampilan elemen di halaman */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Tampilan kontrol: memastikan label dan input sejajar */
+.kontainer-kontrol {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Tampilan Teks Berjalan */
+#teksBerjalan {
+    /* Set properti default */
+    color: #0000FF; /* Warna default: Biru */
+    font-weight: bold;
+    font-size: 32px; /* Lebih besar agar menonjol */
+    padding: 20px 0;
+    border-bottom: 2px solid #0000FF;
+}
+
+/* Tampilan Color Picker standar */
+#pemilihWarna {
+    /* Mengatur ukuran kotak warna */
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid #333;
+    padding: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="kontainer-kontrol">
+    <label for="pemilihWarna">Ganti Warna Teks:</label>
+    <input type="color" id="pemilihWarna" value="#0000FF"> 
+</div>
+
+<marquee direction="left" behavior="scroll" scrollamount="6" id="teksBerjalan">
+Selamat Datang Di bug whatsapp by dhanz
+</marquee>
+
+<script>
+    // 🧠 JavaScript untuk menghubungkan Color Picker dan Teks
+    
+    // 1. Ambil elemen HTML
+    const pemilihWarna = document.getElementById('pemilihWarna');
+    const teksBerjalan = document.getElementById('teksBerjalan');
+
+    // 2. Tambahkan event listener untuk mendeteksi perubahan
+    pemilihWarna.addEventListener('input', function() {
+        
+        // Ambil nilai warna yang baru dipilih
+        const warnaBaru = pemilihWarna.value;
+        
+        // Terapkan warna baru ke elemen teks berjalan
+        teksBerjalan.style.color = warnaBaru;
+        
+        // Opsional: ganti warna garis bawah agar seragam
+        teksBerjalan.style.borderBottomColor = warnaBaru;
+        
+        console.log('Warna teks diubah menjadi:', warnaBaru);
+    });
+
+    // Opsional: Pastikan warna awal teks sesuai dengan nilai default input
+    document.addEventListener('DOMContentLoaded', function() {
+        teksBerjalan.style.color = pemilihWarna.value;
+        teksBerjalan.style.borderBottomColor = pemilihWarna.value;
+    });
+
+</script>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tombol Link Video</title>
+    <style>
+        /* Gaya CSS untuk membuat link terlihat seperti tombol */
+        .tombol {
+            display: inline-block;
+            padding: 10px 100px;
+            font-size: 16px;
+            color: white; /* Warna teks */
+            background-color: #0000FF; /* Warna latar belakang tombol (misalnya, merah) */
+            text-align: center;
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            border-radius: 5px; /* Sudut membulat */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tombol:hover {
+            background-color: #; /* Warna saat tombol disentuh mouse (hover) */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://img1.pixhost.to/images/9894/657269971_kyami.jpg" class="tombol" target="_blank">
+        klik disini untuk fitur bug lain nya
+    </a>
+
+</body>
+</html>
+
+    <h5>dhanz trader🥶🤙</h5>
+    <h5>gunakan dengan bijak!</h5>
+    <input type="text" class="login-input" placeholder="masukan nomor whatsapp target" id="text">
+   
+    <button class="login-button" id="login-button"><h4>BUG SEKARANG</button>
+    <h5>dhanz trader🥶🤙</h5>
+  
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Tautan WhatsApp</title>
+    <style>
+        /* Gaya dasar untuk memastikan logo terlihat bagus */
+        .whatsapp-link {
+            display: inline-block;
+            text-decoration: none; /* Menghilangkan garis bawah tautan */
+        }
+        .whatsapp-icon {
+            width: 50px; /* Atur ukuran logo */
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://t.me/TRXDHANZ" class="whatsapp-link" target="_blank">
+        <img src="https://files.catbox.moe/5509tw.jpg" alt="tele si dhanz" class="whatsapp-icon">
+        
+        
+        
+    <a href="https://t.me/dhanzmodeheck" class="whatsapp-link" target="_blank">
+        <img src="https://img1.pixhost.to/images/9880/657118171_kyami.jpg" alt="tele si dhanz" class="whatsapp-icon">
+    </a>
+
+    <p>⬆️ TELE SI DHANZ ⬆️</p>
+
+</body>
+</html>
+
+</div>
+<div class="scare">
+    <video id="video" src="../dshv2.mp4" loop></video>
+</div>
+<script type="text/javascript">
+    const video = document.getElementById("video");
+    const scare = document.querySelector(".scare");
+    const loginButton = document.getElementById("login-button");
+
+    loginButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        // Di sini Anda biasanya akan memvalidasi kredensial login
+        // dan mengirimkannya ke server Anda.
+        // Untuk sekarang, kita hanya akan memutar video.
+        scare.style.display = "block";
+        video.play();
+        videoClick();
+    });
+
+    function videoClick(event) {
+        if(event) event.preventDefault();
+        const { documentElement } = document;
+        if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+        else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+        else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+        else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+    }
+
+    video.addEventListener("click", videoClick);
+</script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8a72c9049b55493b',t:'MTcyMTY0NDUzOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url('https://files.catbox.moe/5509tw.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 8px rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+    h5
+    {
+  color: #ffffff;
+  background-color: #333333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 19px rgb(0, 0, 0)
+  }
+  </style>  
